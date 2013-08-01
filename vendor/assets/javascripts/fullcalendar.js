@@ -2436,7 +2436,7 @@ function BasicView(element, calendar, viewName) {
 			weekNumberWidth = head.find('th.fc-week-number').outerWidth();
 		}
 
-		colWidth = Math.floor((viewWidth - weekNumberWidth) / colCnt);
+		colWidth = Math.floor((viewWidth - weekNumberWidth+20) / colCnt);
 		setOuterWidth(headCells.slice(0, -1), colWidth);
 	}
 	
