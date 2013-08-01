@@ -2409,8 +2409,8 @@ function BasicView(element, calendar, viewName) {
 		if (opt('weekMode') == 'variable') {
 			rowHeight = rowHeightLast = Math.floor(bodyHeight / (rowCnt==1 ? 2 : 6));
 		}else{
-			rowHeight = Math.floor(bodyHeight / rowCnt);
-			rowHeightLast = bodyHeight - rowHeight * (rowCnt-1);
+			rowHeight = Math.floor(bodyHeight-20 / rowCnt);
+			rowHeightLast = rowHeight; // bodyHeight - rowHeight * (rowCnt-1);
 		}
 		
 		bodyFirstCells.each(function(i, _cell) {
